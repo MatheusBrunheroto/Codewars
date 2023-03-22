@@ -58,7 +58,7 @@ const char** get_pins(const char* observed, size_t* count) {
   int x = strlen(observed);  // Defini "x" e "y" para não trabalhar
   int y = max;               // com size_t, e facilitar a vizualização
   
-   /* 2º Banco de dados pos_x = {x e N| 2 <= x <= 5} seguido de sua alocação dinâmica,
+   /* 2º - Banco de dados pos_x = {x e N| 2 <= x <= 5} seguido de sua alocação dinâmica,
       para conseguir trabalhar com ponteiros dentro das funções, pois não da pra fazer uma passagem
       por referência mais de uma vez dentro da função usando a alocação estática */
 
