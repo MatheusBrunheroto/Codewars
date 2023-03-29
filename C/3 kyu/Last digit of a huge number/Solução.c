@@ -1,5 +1,7 @@
 #include <stdlib.h>
 
+// LEIA A DESCRIÇÃO DA SEGUNDA FUNÇÃO "last_digit" PRIMEIRO, DEPOIS LEIA A DO "calc_expoente"
+
 unsigned long int calc_expoente(unsigned long int expoente_antigo,unsigned long int expoente_atual){
   unsigned long int expoente_aux = expoente_atual;
   
@@ -56,7 +58,6 @@ int last_digit(const unsigned long int *arr, size_t arr_size) {
   int numero_7[] = {1, 7, 9, 3}; 
   int numero_8[] = {6, 8, 4, 2};
   int numero_9[] = {1, 9};
-
 
   // Reduzir o processamento caso o primeiro número seja 1, pois 1^0 == 1 e 1^n∈N == 1
   if(arr[0] % 10 == 1 || arr_size == 0){
@@ -117,8 +118,6 @@ int last_digit(const unsigned long int *arr, size_t arr_size) {
           ultimo_numero = numero_9[expoente % 2];
         }
         
-      
-
         else{ 
           if(base == 1){
             ultimo_numero = 1;
