@@ -49,8 +49,9 @@ int last_digit(const unsigned long int *arr, size_t arr_size) {
      2⁴ = 16
      2⁵ = 32, a partir de 6, os últimos algarismos começam a se repetir...
 
-     As posições foram definidas na ordem 2², 2³, 2⁴, 2⁵. Onde as únicas possibilidades de resto de divisão pro lado esquerdo e direito
-     são 0 e 1, determinado o valor de 0 ou 1, é necessário dividir o expoente por 4, para saber se ele está no grupo da esquerda ou da direita */
+     As posições foram definidas na ordem 2⁴, 2⁵, 2², 2³. Pois 4 % 4 == 0, 5 % 4 == 1, 2 % 4 == 2, 3 % 4 == 3. Dessa forma é
+     possível determinar pelo resultado do resto da divisão por 4 o valor do último algarismo, pois todas as possibilidades foram pré-posicionadas no "Banco de Dados"
+     para causar esse resultado */
 
   int numero_2[] = {6, 2, 4, 8}; 
   int numero_3[] = {1, 3, 9, 7}; 
