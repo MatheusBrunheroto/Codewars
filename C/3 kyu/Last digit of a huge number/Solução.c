@@ -41,7 +41,7 @@ int last_digit(const unsigned long int *arr, size_t arr_size) {
   long int expoente = 0;
 
   /* "Banco de Dados" dos últimos algarismos de potências de: 2, 3, 4, 7, 8, 9 
-         Como foram determinadas as posições? -> cada número possui seu padrão de últimos dígitos, sei que por exemplo:
+      Como foram determinadas as posições? -> cada número possui seu padrão de últimos dígitos, sei que por exemplo:
 
      2¹ = 2
      2² = 4
@@ -49,8 +49,8 @@ int last_digit(const unsigned long int *arr, size_t arr_size) {
      2⁴ = 16
      2⁵ = 32, a partir de 6, os últimos algarismos começam a se repetir...
 
-      As posições foram definidas na ordem 2², 2³, 2⁴, 2⁵. Onde as únicas possibilidades de resto de divisão pro lado esquerdo e direito
-      são 0 e 1, determinado o valor de 0 ou 1, é necessário dividir o expoente por 4, para saber se ele está no grupo da esquerda ou da direita */
+     As posições foram definidas na ordem 2², 2³, 2⁴, 2⁵. Onde as únicas possibilidades de resto de divisão pro lado esquerdo e direito
+     são 0 e 1, determinado o valor de 0 ou 1, é necessário dividir o expoente por 4, para saber se ele está no grupo da esquerda ou da direita */
 
   int numero_2[] = {6, 2, 4, 8}; 
   int numero_3[] = {1, 3, 9, 7}; 
