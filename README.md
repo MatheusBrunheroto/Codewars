@@ -16,8 +16,8 @@
                     refinados com a intenção de atingirem a perfeição, apenas treinos de raciocínio lógico que considero legal armazerar.
                 </td>
             </tr>
-        </table> <br>
-        <p> Meu perfil pode ser acessado no link -> https://www.codewars.com/users/Matheus%20Brunheroto </p>
+        </table> 
+        <h5> Meu perfil pode ser acessado clicando em → <a href = "https://www.codewars.com/users/Matheus%20Brunheroto"> Codewars </a> </h5>
     </body>
 </html>
 
